@@ -1,3 +1,5 @@
+// https://github.com/niwibe/moment-tokens/blob/master/moment-tokens.js
+
 (function() {
     var moment, strftimeFormats = {}, phpFormats = {};
 
@@ -83,7 +85,7 @@
             case "%c":
                 return "LLLL";
             case "%d":
-                return "D";
+                return "DD";
             case "%j":
                 return "DDDD";
             case "%e":
@@ -102,6 +104,8 @@
                 return "HH";
             case "%I":
                 return "hh";
+            case "%l":
+                return "h";
             case "%w":
                 return "d";
             case "%W":
